@@ -5,6 +5,27 @@
 //@import '../../bower_components/singularity/stylesheets/_singularitygs.scss';
 
 
+@font-face {
+	font-family: 'GothamPro';
+	src: url("../fonts/GothamProLightRegular.eot");
+	/* IE9 Compat Modes */
+	src: url("../fonts/GothamProLightRegular.svg#roboto") format("svg"),
+	url("../fonts/GothamProLightRegular.woff") format("woff"),
+	url("../fonts/GothamProLightRegular.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamPro';
+	src: url("../fonts/GothamPro.eot");
+	/* IE9 Compat Modes */
+	src: url("../fonts/GothamPro.svg#roboto") format("svg"),
+	url("../fonts/GothamPro.woff") format("woff"),
+	url("../fonts/GothamPro.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 
