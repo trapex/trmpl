@@ -1,0 +1,49 @@
+@media print {
+
+	@page {
+		margin: 1.5cm;
+	}
+
+	body {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		line-height: 1.45;
+		font-family: Garamond, "Times New Roman", serif;
+		font-size: 14pt;
+	}
+
+	* {
+		background: none !important;
+		color: black !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	a[href="#"],
+	a[href="javascript:"] {
+		content: "";
+	}
+
+	p {
+		widows: 4; //верхние висячие строки
+		orphans: 3; //нижние висячие строки
+	}
+
+	ul, table, figure {
+		page-break-inside: avoid; // запрет разделения элемента на разные страницы
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		page-break-after: avoid;
+	}
+
+}

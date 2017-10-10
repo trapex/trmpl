@@ -1,0 +1,23 @@
+block vars
+
+doctype html
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gt IE 8]><html><![endif]-->
+html
+	head
+		meta(charset="UTF-8")/
+		meta(name="viewport", content="width=device-width")/
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")/
+		link(rel="stylesheet", href="/css/style.css")/
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		//script(src="/js/require.js")
+		title HTML Page
+
+		block head
+	body
+		.wrapper
+			.website
+				block content
+
+		script(src="/js/custom.js")
+		//script(src="/js/vendor.js")
