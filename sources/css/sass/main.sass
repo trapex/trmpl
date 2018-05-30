@@ -1,0 +1,101 @@
+// COLORS
+$white: #fff
+$black: #000
+$gray: #4b4d4f
+$gray--dark: #131314
+$gray--font: #797e81
+$gray--medium: #343639
+$gray-copyright: #4b4b4b
+$yellow: #fdd60f
+
+// MEDIA QUERIES
+$mobile: "screen and (min-width: 320px) and (max-width: 680px)"
+//$tablet: "screen and (min-width: 681px) and (max-width: 1279px)"
+$tablet: "screen and (min-width: 681px) and (max-width: 1099px)"
+//$tablet: "screen and (min-width: 681px)"
+$tablet--small: "screen and (min-width: 501px) and (max-width: 680px)"
+//$desktop: "screen and (min-width: 1280px)"
+$desktop--small: "screen and (min-width: 1100px) and (max-width: 1368px)"
+$desktop: "screen and (min-width: 1100px)"
+//$desktop-xl: "screen and (min-width: 1600px)"
+
+*
+	box-sizing: border-box
+
+body
+	-webkit-font-smoothing: antialiased
+
+.wrapper
+	width: 100%
+	min-height: 100%
+	position: relative
+	height: auto !important
+	background-image: url(../img/bg.jpg)
+	background-repeat: repeat
+	overflow: hidden
+
+	@media #{$mobile}
+		min-width: 640px
+
+	@media #{$tablet}
+		min-width: 800px
+
+.website
+	position: relative
+	height: 100%
+	width: 100%
+
+h1
+	@include gothamPro(300)
+	color: $white
+	font-size: 72px
+
+	@media #{$tablet}
+		font-size: 62px
+
+	@media #{$desktop}
+		font-size: 62px
+
+h2
+	@include gothamPro(300)
+
+	color: $white
+	opacity: 0.5
+
+	@media #{$mobile}
+		font-size: 48px
+
+	@media #{$tablet}
+		font-size: 42px
+
+	@media #{$desktop}
+		font-size: 42px
+
+a
+	text-decoration: none
+
+	&:focus
+		outline: none!important
+
+	&:active
+		outline: none!important
+
+.sep-mob
+	display: block
+
+	@media #{$tablet}
+		display: inline-block
+
+	@media #{$desktop}
+		display: inline-block
+
+.sep-tab
+	display: inline-block
+
+	@media #{$tablet}
+		display: block
+
+	@media #{$desktop}
+		display: inline-block
+
+

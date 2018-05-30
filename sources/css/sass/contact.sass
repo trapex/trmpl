@@ -1,0 +1,210 @@
+.contact
+	margin: 0 auto
+
+	@media #{$mobile}
+		width: 75%
+
+	@media #{$tablet}
+		width: 90%
+
+	&__wrap
+		margin-top: 72px
+		clear: both
+
+		@media #{$tablet}
+			margin-top: 56px
+
+		@media #{$desktop}
+			margin-top: 82px
+			float: right
+
+	&__phone
+		display: block
+		width: 320px
+		@include gothamPro(400)
+		color: $white
+		font-size: 36px
+		outline: none
+
+		@media #{$mobile}
+			float: left
+
+		@media #{$desktop}
+			text-align: right
+
+	&__email
+		display: block
+		@include gothamPro(400)
+		font-size: 21px
+		color: $yellow
+
+		@media #{$mobile}
+			display: none
+
+		@media #{$tablet}
+			margin-top: 20px
+
+		@media #{$desktop}
+			width: 150px
+			margin-top: 30px
+			float: right
+			text-align: right
+
+	&__mob-email
+		display: none
+		margin-top: -8px
+		background-image: url(../img/email-icon.svg)
+		@include background-img(63px, 63px)
+
+		@media #{$mobile}
+			display: block
+			float: right
+
+	&__adress
+		@include gothamPro(400)
+		color: $white
+		font-size: 30px
+		line-height: 41px
+		clear: both
+
+		@media #{$mobile}
+			margin-top: 70px
+
+		@media #{$tablet}
+			margin-top: 72px
+			font-size: 21px
+			line-height: 34px
+
+		@media #{$desktop}
+			font-size: 21px
+			line-height: 34px
+
+	&__link
+		display: block
+		margin-top: 55px
+		@include gothamPro(400)
+		font-size: 30px
+		color: $yellow
+
+		@media #{$tablet}
+			margin-top: 20px
+			font-size: 21px
+
+		@media #{$desktop}
+			width: 160px
+			margin-top: 20px
+			font-size: 21px
+
+	&__email,
+	&__link
+		outline: none
+
+		@media #{$desktop}
+			position: relative
+			text-align: center
+
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				background-color: $yellow
+				bottom: -1px
+				left: 0
+				transform: scale(0)
+				transform: scaleX(0)
+				transition: transform 0.3s ease-out
+
+			&:hover
+
+				&:after
+					transform: scale(1)
+					transform: scaleX(1)
+					transition: transform 0.3s ease-in
+
+	&__wrap-adress
+
+		@media #{$desktop}
+			width: 600px
+			margin-top: 66px
+			float: left
+
+	&__soc
+		clear: both
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+
+		@media #{$mobile}
+			margin-top: 112px
+
+		@media #{$tablet}
+			margin-top: 92px
+
+		@media #{$desktop}
+			margin-top: 90px
+
+
+	&__soc-title
+		display: none
+		@include gothamPro(300)
+		font-size: 11px
+		color: $gray-copyright
+		text-transform: uppercase
+
+		@media #{$tablet}
+			display: block
+			margin: 14px 18px 0 0
+
+		@media #{$desktop}
+			display: block
+			margin: 14px 18px 0 0
+
+	&__soc-list
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+		@media #{$mobile}
+			width: 147px
+
+		@media #{$tablet}
+			width: 90px
+
+		@media #{$desktop}
+			width: 90px
+
+	&__soc-item
+		display: block
+
+		&_vk
+			background-image: url(../img/vk-btn.svg)
+			@include background-img(63px, 63px)
+
+			@media #{$tablet}
+				background-image: url(../img/vk-btn-desktop.svg)
+				@include background-img(40px, 40px)
+
+			@media #{$desktop}
+				background-image: url(../img/vk-btn-desktop.svg)
+				@include background-img(40px, 40px)
+
+				&:hover
+					background-image: url(../img/vk-btn.svg)
+					@include background-img(40px, 40px)
+
+		&_fb
+			background-image: url(../img/fb-btn.svg)
+			@include background-img(63px, 63px)
+
+			@media #{$tablet}
+				background-image: url(../img/fb-btn-desktop.svg)
+				@include background-img(40px, 40px)
+
+			@media #{$desktop}
+				background-image: url(../img/fb-btn-desktop.svg)
+				@include background-img(40px, 40px)
+
+				&:hover
+					background-image: url(../img/fb-btn.svg)
+					@include background-img(40px, 40px)

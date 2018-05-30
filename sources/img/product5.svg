@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115.03" height="115.03" viewBox="0 0 115.03 115.031" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #fff;
+      }
+      .cls-1, .cls-3, .cls-4 {
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+      .cls-2 {
+        stroke-width: 1px;
+        opacity: 0.3;
+      }
+      .cls-3 {
+        stroke-linecap: round;
+      }
+      .cls-4 {
+        stroke-linejoin: round;
+      }</style>
+</defs>
+<path class="cls-1" transform="translate(-1319 -982.97)" d="M1421.11,1012a55.013,55.013,0,1,1-16.06-16.071"/>
+<circle class="cls-2" cx="56" cy="59.031" r="35" data-name="Ellipse 1 copy"/>
+<circle class="cls-2" cx="56" cy="59.031" r="15" data-name="Ellipse 1 copy 2"/>
+<path class="cls-3" transform="translate(-1319 -982.97)" d="m1375 1042l27-27"/>
+<path class="cls-4" transform="translate(-1319 -982.97)" d="m1417 998a2 2 0 0 0 2 2h14l-15 15h-16v-16l15-15v14z"/>
+</svg>

@@ -1,0 +1,74 @@
+.footer
+	position: relative
+
+	@media #{$mobile}
+		margin-top: 100px
+		padding-top: 350px
+		height: 390px
+
+	@media #{$tablet}
+		height: 461px
+		margin-top: 70px
+		padding-top: 422px
+
+	@media #{$desktop}
+		height: 461px
+		margin-top: 67px
+		padding-top: 422px
+
+	&__bg
+		position: absolute
+		background-image: url(../img/footer-bg-mobile.png)
+		@include background-img(640px, 390px)
+		top: 0
+		left: 0
+
+		@media #{$tablet}
+			background-image: url(../img/footer-bg.png)
+			@include background-img(1418px, 461px)
+			left: 50%
+			margin-left: -686px
+
+		@media #{$desktop}
+			background-image: url(../img/footer-bg.png)
+			@include background-img(1418px, 461px)
+			left: 50%
+			margin-left: -688px
+
+	&__wrap
+		margin: 0 auto
+
+		@media #{$mobile}
+			width: 75%
+
+		@media #{$tablet}
+			width: 92%
+
+		@media #{$desktop}
+			width: 95.5%
+
+	&__logo
+		background-image: url(../img/logo-footer.svg)
+		@include background-img(138px, 21px)
+		float: left
+
+		@media #{$tablet}
+			@include background-img(69px, 10px)
+
+		@media #{$desktop}
+			@include background-img(69px, 10px)
+
+	&__copyright
+		width: 220px
+		@include gothamPro(300)
+		color: $gray-copyright
+		font-size: 22px
+		float: right
+
+		@media #{$tablet}
+			width: 110px
+			font-size: 11px
+
+		@media #{$desktop}
+			width: 110px
+			font-size: 11px

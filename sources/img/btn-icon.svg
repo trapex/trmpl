@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1 {
+        fill: #fdd60f;
+      }
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }</style>
+</defs>
+<circle class="cls-1" cx="20" cy="20" r="20" data-name="Rectangle 2 copy 12"/>
+<path class="cls-2" transform="translate(-220 -372)" d="m239 384l5 8-5 8" data-name="Rectangle 2 copy 15"/>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114.56" height="108.72" viewBox="0 0 114.563 108.716" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        fill-rule: evenodd;
+      }
+      .cls-1 {
+        stroke-width: 2px;
+      }
+      .cls-2 {
+        stroke-width: 1px;
+        opacity: 0.3;
+      }</style>
+</defs>
+<path class="cls-1" transform="translate(-259.03 -988.34)" d="M322.933,1090.45a41.986,41.986,0,0,1-41.988-72.72l48.624-28.1a2,2,0,0,1,2.732.732l8.5,14.721a2,2,0,0,1-.732,2.73l-48.258,27.85a21.011,21.011,0,1,0,21.009,36.39l48.249-27.86a1.989,1.989,0,0,1,2.732.73l8.5,14.72a2,2,0,0,1-.732,2.73Z" data-name="Rectangle 1 copy 2"/>
+<path class="cls-1" transform="translate(-259.03 -988.34)" d="m314.48 999.49l9.5 16.457"/>
+<path class="cls-1" transform="translate(-259.03 -988.34)" d="m345.98 1054l9.5 16.46" data-name="Shape 4 copy"/>
+<path class="cls-2" transform="translate(-259.03 -988.34)" d="m338 1018l2.67 14.95 6.794-6.37 3.536 14.44"/>
+</svg>

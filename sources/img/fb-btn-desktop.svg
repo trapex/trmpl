@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="btn fb" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1 {
+        fill: #fdd60f;
+      }
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+      .cls-2 {
+        fill: #fff;
+      }</style>
+</defs>
+<path class="cls-1" transform="translate(-323 -312)" d="m343 352a20 20 0 1 1 20 -20 20 20 0 0 1 -20 20zm0-38a18 18 0 1 0 18 18 17.994 17.994 0 0 0 -18 -17.995z" data-name="Rectangle 2 copy 15"/>
+<path class="cls-2" transform="translate(-323 -312)" d="M346.1,325.916h1.542v-2.911H344.3a3.217,3.217,0,0,0-3.317,3.461v2.086H338.5v2.863h2.477v8.562h3.742v-8.562h2.919v-2.863h-2.919v-1.274A1.37,1.37,0,0,1,346.1,325.916Z"/>
+</svg>

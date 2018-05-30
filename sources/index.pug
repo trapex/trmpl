@@ -1,11 +1,44 @@
 extends layout/template
 
 block vars
-	- var pageTemplate = "index"; // page-specific var
+    - var pageTemplate = "index"; // page-specific var
+    - var bodySpecialClass = "index-page"
 
 block head
-	script(src="/js/main.bundle.js")
+    //script(src="js/main.bundle.js")
 
 block content
-	p Hello, TRMPL!
+    .index(data-js-index-section='first')
+        .index__puppy
+        include layout/blocks/header
+
+        .index__scroll-btn.js-index-scroll-arrow
+
+        .index__overflow
+
+            .index__about
+                .index__about-wrap
+                    h1.index__title Трамплин
+                    .index__subtitle Адресуемые медиа
+                    .index__content
+                        | «Трамплин» – технологический стартап в области адресуемого медиа.
+                        | Наша главная цель – создание «умной» и полезной рекламы
+                        | с возможностью таргетирования в реальном времени. Используя ресурсы
+                        | традиционных и digital-медиа, а также фактические знания об аудитории,
+                        | рекламная платформа «Трамплина» позволяет в самый подходящий момент
+                        | адресовать человеку максимально релевантное сообщение.
+                    //a.index__presentation(href='#' target='_blank') Посмотреть презентацию
+
+
+            section.index__product(data-js-index-section='product')
+                include layout/blocks/product
+
+            section.index__vacancy(data-js-index-section='vacancy')
+                include layout/blocks/vacancy
+
+            section.index__contact(data-js-index-section='contact')
+                include layout/blocks/contact
+
+        include layout/blocks/footer
+
 

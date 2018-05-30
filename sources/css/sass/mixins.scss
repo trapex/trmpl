@@ -1,65 +1,69 @@
-@mixin text-shadow ($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+@mixin text-shadow($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
 	text-shadow: $string;
 }
-@mixin box-shadow ($string) {
+
+@mixin box-shadow($string) {
 	-webkit-box-shadow: $string;
-	-moz-box-shadow:    $string;
-	box-shadow:         $string;
+	-moz-box-shadow: $string;
+	box-shadow: $string;
 }
-@mixin drop-shadow ($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
-	-webkit-box-shadow:	$x $y $blur $spread rgba(0, 0, 0, $alpha);
-	-moz-box-shadow:	$x $y $blur $spread rgba(0, 0, 0, $alpha);
-	box-shadow:		$x $y $blur $spread rgba(0, 0, 0, $alpha);
+
+@mixin drop-shadow($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
+	-webkit-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
+	-moz-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
+	box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
 }
-@mixin inner-shadow ($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
+
+@mixin inner-shadow($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
 	-webkit-box-shadow: inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
-	-moz-box-shadow:    inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
-	box-shadow:         inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
+	-moz-box-shadow: inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
+	box-shadow: inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
 }
 
-@mixin box-sizing ($type: border-box) {
+@mixin box-sizing($type: border-box) {
 	-webkit-box-sizing: $type;
-	-moz-box-sizing:    $type;
-	box-sizing:         $type;
+	-moz-box-sizing: $type;
+	box-sizing: $type;
 }
 
-@mixin border-radius ($radius: 5px) {
+@mixin border-radius($radius: 5px) {
 	-webkit-border-radius: $radius;
-	-moz-border-radius:    $radius;
-	border-radius:         $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
 
-	-moz-background-clip:    padding;
+	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+	background-clip: padding-box;
 }
-@mixin border-radiuses ($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
-	-webkit-border-top-right-radius:    $topright;
+
+@mixin border-radiuses($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+	-webkit-border-top-right-radius: $topright;
 	-webkit-border-bottom-right-radius: $bottomright;
-	-webkit-border-bottom-left-radius:  $bottomleft;
-	-webkit-border-top-left-radius:     $topleft;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
 
-	-moz-border-radius-topright:        $topright;
-	-moz-border-radius-bottomright:     $bottomright;
-	-moz-border-radius-bottomleft:      $bottomleft;
-	-moz-border-radius-topleft:         $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
 
-	border-top-right-radius:            $topright;
-	border-bottom-right-radius:         $bottomright;
-	border-bottom-left-radius:          $bottomleft;
-	border-top-left-radius:             $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	border-top-left-radius: $topleft;
 
-	-moz-background-clip:    padding;
+	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+	background-clip: padding-box;
 }
 
-@mixin opacity ($opacity: 0.5) {
-	-webkit-opacity: 	$opacity;
-	-moz-opacity: 		$opacity;
-	opacity: 		$opacity;
+@mixin opacity($opacity: 0.5) {
+	-webkit-opacity: $opacity;
+	-moz-opacity: $opacity;
+	opacity: $opacity;
 }
 
-@mixin gradient ($startColor: #eee, $endColor: white) {
+@mixin gradient($startColor: #eee, $endColor: white) {
 	background-color: $startColor;
 	background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
 	background: -webkit-linear-gradient(top, $startColor, $endColor);
@@ -67,7 +71,8 @@
 	background: -ms-linear-gradient(top, $startColor, $endColor);
 	background: -o-linear-gradient(top, $startColor, $endColor);
 }
-@mixin horizontal-gradient ($startColor: #eee, $endColor: white) {
+
+@mixin horizontal-gradient($startColor: #eee, $endColor: white) {
 	background-color: $startColor;
 	background-image: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
 	background-image: -webkit-linear-gradient(left, $startColor, $endColor);
@@ -76,19 +81,20 @@
 	background-image: -o-linear-gradient(left, $startColor, $endColor);
 }
 
-@mixin animation ($name, $duration: 300ms, $delay: 0, $ease: ease) {
+@mixin animation($name, $duration: 300ms, $delay: 0, $ease: ease) {
 	-webkit-animation: $name $duration $delay $ease;
-	-moz-animation:    $name $duration $delay $ease;
-	-ms-animation:     $name $duration $delay $ease;
+	-moz-animation: $name $duration $delay $ease;
+	-ms-animation: $name $duration $delay $ease;
 }
 
-@mixin transition ($transition) {
+@mixin transition($transition) {
 	-webkit-transition: $transition;
-	-moz-transition:    $transition;
-	-ms-transition:     $transition;
-	-o-transition:      $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
 }
-@mixin transition-transform ($arg) {
+
+@mixin transition-transform($arg) {
 	-webkit-transition: -webkit-transform $arg;
 	-moz-transition: -moz-transform $arg;
 	-o-transition: -o-transform $arg;
@@ -100,54 +106,62 @@
 	-o-transform: translatez(0);
 	transform: translatez(0);
 }
-@mixin transform($string){
-	-webkit-transform: 	 $string;
-	-moz-transform: 	 $string;
-	-ms-transform: 		 $string;
-	-o-transform: 		 $string;
-	transform:			 $string;
+
+@mixin transform($string) {
+	-webkit-transform: $string;
+	-moz-transform: $string;
+	-ms-transform: $string;
+	-o-transform: $string;
+	transform: $string;
 }
-@mixin scale ($factor) {
+
+@mixin scale($factor) {
 	-webkit-transform: scale($factor);
-	-moz-transform: 	 scale($factor);
-	-ms-transform: 		 scale($factor);
-	-o-transform: 		 scale($factor);
+	-moz-transform: scale($factor);
+	-ms-transform: scale($factor);
+	-o-transform: scale($factor);
 }
-@mixin  rotate ($deg) {
+
+@mixin rotate($deg) {
 	-webkit-transform: rotate($deg);
-	-moz-transform: 	 rotate($deg);
-	-ms-transform: 		 rotate($deg);
-	-o-transform: 		 rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
 }
-@mixin  skew ($deg, $deg2) {
-	-webkit-transform:       skew($deg, $deg2);
-	-moz-transform: 	 skew($deg, $deg2);
-	-ms-transform: 		 skew($deg, $deg2);
-	-o-transform: 		 skew($deg, $deg2);
+
+@mixin skew($deg, $deg2) {
+	-webkit-transform: skew($deg, $deg2);
+	-moz-transform: skew($deg, $deg2);
+	-ms-transform: skew($deg, $deg2);
+	-o-transform: skew($deg, $deg2);
 }
-@mixin  translate ($x, $y:0) {
-	-webkit-transform:       translate($x, $y);
-	-moz-transform: 	 translate($x, $y);
-	-ms-transform: 		 translate($x, $y);
-	-o-transform: 		 translate($x, $y);
+
+@mixin translate($x, $y:0) {
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-o-transform: translate($x, $y);
 }
-@mixin  translate3d ($x, $y: 0, $z: 0) {
-	-webkit-transform:       translate3d($x, $y, $z);
-	-moz-transform: 	 translate3d($x, $y, $z);
-	-ms-transform: 		 translate3d($x, $y, $z);
-	-o-transform: 		 translate3d($x, $y, $z);
+
+@mixin translate3d($x, $y: 0, $z: 0) {
+	-webkit-transform: translate3d($x, $y, $z);
+	-moz-transform: translate3d($x, $y, $z);
+	-ms-transform: translate3d($x, $y, $z);
+	-o-transform: translate3d($x, $y, $z);
 }
-@mixin  perspective ($value: 1000) {
-	-webkit-perspective: 	$value;
-	-moz-perspective: 	$value;
-	-ms-perspective: 	$value;
-	perspective: 		$value;
+
+@mixin perspective($value: 1000) {
+	-webkit-perspective: $value;
+	-moz-perspective: $value;
+	-ms-perspective: $value;
+	perspective: $value;
 }
-@mixin  transform-origin ($x:center, $y:center) {
+
+@mixin transform-origin($x:center, $y:center) {
 	-webkit-transform-origin: $x $y;
-	-moz-transform-origin:    $x $y;
-	-ms-transform-origin:     $x $y;
-	-o-transform-origin:      $x $y;
+	-moz-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	-o-transform-origin: $x $y;
 }
 
 // family mixins
@@ -161,8 +175,7 @@
 		&:first-child {
 			@content;
 		}
-	}
-	@else {
+	} @else {
 		&:nth-child(-n + #{$num}) {
 			@content;
 		}
@@ -235,7 +248,6 @@
 	}
 }
 
-
 /// Select all children but `$num`.
 /// @group with-arguments
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
@@ -278,18 +290,16 @@
 	}
 }
 
-
 /// Select the item in the middle of `$num` child. Only works with odd number
 /// chain.
 /// @group with-arguments
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 /// @param {number} $num - id of the child
 @mixin middle($num) {
-	&:nth-child(#{round($num / 2)}){
+	&:nth-child(#{round($num / 2)}) {
 		@content;
 	}
 }
-
 
 /// Select all children between the `$num` first and the `$num` last.
 /// @group with-arguments
@@ -300,7 +310,6 @@
 		@content;
 	}
 }
-
 
 /// This quantity-query mixin will only select the first of `$limit` items. It will not
 /// work if there is not as much as item as you set in `$limit`.
@@ -422,7 +431,6 @@
 	}
 }
 
-
 /// This mixin is used to automatically sort z-index in numerical order. But it
 /// can also sort them in anti-numerical order, depending the parameters you use.
 /// @group using functions
@@ -457,6 +465,64 @@
 
 // custom mixins
 
-@mixin color-debug ($r, $g, $b, $a) {
-//	background-color: rgba($r, $g, $b, $a);
+@mixin color-debug($r, $g, $b, $a) {
+	//	background-color: rgba($r, $g, $b, $a);
+}
+
+@mixin gothamPro($weight) {
+	font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+	font-weight: $weight;
+	font-kerning: none;
+}
+
+@mixin background-img($w, $h) {
+	width: $w;
+	height: $h;
+	background-size: $w $h;
+	background-repeat: no-repeat;
+}
+
+@mixin retina-img($w, $h, $k) {
+	width: $w/$k;
+	height: $h/$k;
+	background-size: $w/$k $h/$k;
+	background-repeat: no-repeat;
+}
+
+@mixin button($w, $h) {
+	display: block;
+	width: $w;
+	height: $h;
+	line-height: $h;
+	background-color: $yellow;
+	border-radius: 50px;
+	text-decoration: none;
+	@include gothamPro(500);
+	font-size: 24px;
+	color: $black;
+	text-align: center;
+	transition: color 0.3s ease-out, background-color 0.3s ease-out;
+
+	@media #{$tablet} {
+		border: 2px solid $yellow;
+		@include gothamPro(500);
+		font-size: 15px;
+
+	}
+
+	@media #{$desktop} {
+		background-color: transparent;
+		border: 2px solid $yellow;
+		@include gothamPro(400);
+		font-size: 15px;
+		color: $white;
+
+		&:hover {
+			background-color: $yellow;
+			color: $black;
+			transition: all 0.3s ease-in;
+		}
+	}
+
+
 }

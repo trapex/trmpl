@@ -1,0 +1,177 @@
+.index
+	position: relative
+	margin: 0 auto
+
+	@media #{$mobile}
+		padding-bottom: 20px
+
+	&__overflow
+
+		@media #{$tablet}
+			padding-top: 90px
+			width: 800px
+			margin: 0 auto
+
+		@media #{$desktop}
+			padding-top: 128px
+			width: 1280px
+			margin: 0 auto
+
+		@media #{$desktop--small}
+			width: 1000px
+
+	&__scroll-btn
+		position: fixed
+		display: none
+		background-image: url(../img/scroll-arrow.svg)
+		@include background-img(18px, 29px)
+		//top: 812px
+		right: 32px
+		bottom: 20px
+		opacity: 1
+		transition: opacity 0.3s ease-in
+
+		@media #{$desktop}
+			display: block
+
+		&_hidden
+			opacity: 0
+			transition: opacity 0.3s ease-out
+
+	&__about
+		position: relative
+		margin: 0 auto
+
+		@media #{$mobile}
+			width: 75%
+			//margin-top: 274px
+			padding-top: 374px
+
+		@media #{$tablet}
+			width: 92%
+			padding-top: 32px
+
+		@media #{$desktop}
+			//width: 89%
+			padding-top: 55px
+
+	&__puppy
+		position: absolute
+		background-repeat: no-repeat
+		background-position: center top
+		top: 61px
+		left: 50%
+		margin-left: -568px
+
+		@media #{$mobile}
+			background-image: url(../img/dog-mobile.png)
+			@include background-img(832px, 605px)
+
+		@media #{$tablet}
+			background-image: url(../img/dog.png)
+			@include background-img(1283px, 940px)
+			top: 325px
+			left: 50%
+			margin-left: -900px
+
+		@media #{$desktop}
+			background-image: url(../img/dog.png)
+			@include background-img(1848px, 1344px)
+			top: 95px
+			left: 50%
+			margin-left: -1200px
+
+		@media #{$desktop--small}
+			@include background-img(1200px, 873px)
+			margin-left: -700px
+			top: 160px
+
+	&__about-wrap
+
+		@media #{$tablet}
+			width: 400px
+
+		@media #{$desktop}
+			width: 480px
+
+	&__title
+		letter-spacing: 6.8px
+
+		@media #{$tablet}
+			letter-spacing: 6px
+
+		@media #{$desktop}
+			letter-spacing: 6.5px
+
+	&__subtitle
+		margin-top: 7px
+		@include gothamPro(400)
+		color: $white
+		font-size: 30px
+
+		@media #{$tablet}
+			margin-top: 12px
+			font-size: 21px
+
+		@media #{$desktop}
+			margin-top: 12px
+			font-size: 21px
+
+	&__content
+		margin-top: 52px
+		@include gothamPro(300)
+		color: $gray--font
+		font-size: 21px
+		line-height: 30px
+
+		@media #{$tablet}
+			margin-top: 42px
+			font-size: 15px
+			line-height: 21px
+
+		@media #{$desktop}
+			margin-top: 42px
+			font-size: 15px
+			line-height: 21px
+
+		@media #{$desktop--small}
+			text-shadow: 1px 1px 3px $black, 0 0 10px $black
+
+	&__presentation
+		margin-top: 62px
+		@include button(100%, 80px)
+
+		@media #{$tablet}
+			margin-top: 64px
+			@include button(280px, 52px)
+
+		@media #{$desktop}
+			margin-top: 54px
+			@include button(280px, 54px)
+
+	&__product
+		margin-top: 157px
+
+		@media #{$tablet}
+			margin-top: 288px
+
+		@media #{$desktop}
+			margin-top: 240px
+
+	&__vacancy
+		margin-top: 170px
+
+		@media #{$tablet}
+			margin-top: 134px
+
+		@media #{$desktop}
+			margin-top: 115px
+
+	&__contact
+		margin-top: 145px
+
+		@media #{$tablet}
+			margin-top: 118px
+
+		@media #{$desktop}
+			margin-top: 112px

@@ -1,0 +1,299 @@
+.vacancy
+	position: relative
+	margin: 0 auto
+
+	@media #{$mobile}
+		width: 75%
+
+	@media #{$tablet}
+		width: 92%
+
+	&__title
+
+		@media #{$mobile}
+			letter-spacing: -0.7px
+
+	&__title-mob
+
+		@media #{$mobile}
+			display: inline
+
+		@media #{$tablet}
+			display: none
+
+		@media #{$desktop}
+			display: none
+
+	&__title-desk
+
+		@media #{$mobile}
+			display: none
+
+		@media #{$tablet}
+			display: inline
+
+		@media #{$desktop}
+			display: inline
+
+	&__title-wrap
+		position: relative
+
+		@media #{$mobile}
+
+	&__nav
+		display: none
+		position: absolute
+		width: 115px
+		top: 4px
+		right: -45px
+
+		@media #{$mobile}
+			display: block
+
+		.slick-arrow
+			width: 100%
+			height: 30px
+
+			&_prev
+				background-image: url(../img/arrows-prev.png)
+				@include background-img(18px, 30px)
+				width: 50px
+				height: 50px
+				background-position: center
+				float: left
+
+			&_next
+				background-image: url(../img/arrows-next.png)
+				@include background-img(18px, 30px)
+				width: 50px
+				height: 50px
+				background-position: center
+				float: right
+
+	&__list
+
+		@media #{$mobile}
+			margin-top: 65px
+
+		@media #{$tablet}
+			width: 64%
+			margin-left: 10%
+
+		@media #{$desktop}
+			width: 70%
+			margin-left: 11.5%
+
+	&__item
+
+		@media #{$tablet}
+			display: none
+			min-height: 888px
+
+		@media #{$desktop}
+			display: none
+			min-height: 648px
+
+		&_active
+
+			@media #{$tablet}
+				display: block
+
+			@media #{$desktop}
+				display: block
+
+	&__item-title
+		@include gothamPro(400)
+		color: $white
+		font-size: 36px
+
+		@media #{$tablet}
+			@include gothamPro(300)
+
+		span
+
+			@media #{$tablet}
+				display: none
+
+			@media #{$desktop}
+				display: none
+
+	&__content
+		margin-top: 50px
+		@include gothamPro(300)
+		color: $gray--font
+		font-size: 21px
+		line-height: 30px
+
+		@media #{$tablet}
+			margin-top: 47px
+			font-size: 15px
+			line-height: 21px
+
+		@media #{$desktop}
+			margin-top: 47px
+			font-size: 15px
+			line-height: 21px
+
+		ul
+
+		li
+			position: relative
+			margin-top: 12px
+			padding-left: 40px
+
+			@media #{$tablet}
+				margin-top: 7px
+				padding-left: 22px
+
+			@media #{$desktop}
+				margin-top: 6px
+				padding-left: 22px
+
+			&:before
+				$size: 6px
+				content: ''
+				position: absolute
+				top: 14px
+				left: 0
+				width: $size
+				height: $size
+				background-color: $gray--font
+				border-radius: 50%
+
+				@media #{$tablet}
+					$size: 3px
+					width: $size
+					height: $size
+					top: 8px
+					left: 3px
+
+				@media #{$desktop}
+					$size: 3px
+					width: $size
+					height: $size
+					top: 8px
+					left: 3px
+
+	&__header
+		margin-top: 40px
+		color: $gray--medium
+
+		@media #{$tablet}
+			margin-top: 20px
+
+		@media #{$desktop}
+			margin-top: 20px
+
+		&_type
+			margin-top: 28px
+
+			@media #{$tablet}
+				margin-top: 20px
+
+			@media #{$desktop}
+				margin-top: 20px
+
+	&__text
+		margin-top: 14px
+
+		@media #{$tablet}
+			margin-top: 8px
+
+		@media #{$desktop}
+			margin-top: 8px
+
+	&__btn
+		position: relative
+		display: block
+
+		@media #{$mobile}
+			margin-top: 72px
+			@include button(100%, 85px)
+
+		@media #{$tablet}
+			width: 270px
+			margin-top: 50px
+			margin-left: 35%
+			padding-left: 60px
+			@include gothamPro(400)
+			color: $white
+			font-size: 21px
+			border: none
+
+			&:before
+				content: ''
+				position: absolute
+				top: -6px
+				left: 0
+				background-image: url(../img/btn-icon.svg)
+				@include background-img(40px, 40px)
+
+		@media #{$desktop}
+			width: 270px
+			margin-top: 60px
+			margin-left: 31.3%
+			padding-left: 60px
+			@include gothamPro(400)
+			color: $white
+			font-size: 21px
+			cursor: pointer
+
+			&:before
+				content: ''
+				position: absolute
+				top: -6px
+				left: 0
+				background-image: url(../img/btn-icon-desktop.svg)
+				@include background-img(40px, 40px)
+				transition: background-image 0.3s ease-out
+
+			&:hover
+
+				&:before
+					background-image: url(../img/btn-icon.svg)
+					transition: background-image 0.3s ease-in
+
+	&__wrap
+
+		@media #{$tablet}
+			margin-top: 56px
+			display: flex
+			flex-direction: row
+		//justify-content: space-between
+
+		@media #{$desktop}
+			margin-top: 56px
+			display: flex
+			flex-direction: row
+
+	&__nav-list
+
+		@media #{$mobile}
+			display: none
+
+		@media #{$tablet}
+			width: 25%
+
+		@media #{$desktop}
+			width: 20%
+
+	&__nav-item
+		@include gothamPro(400)
+		font-size: 21px
+		color: $yellow
+		cursor: pointer
+		transition: color 0.3s ease-in
+
+		@media #{$tablet}
+			margin-top: 17px
+			margin-bottom: 30px
+
+		@media #{$desktop}
+			margin-top: 14px
+			margin-bottom: 31px
+
+		&_active
+			color: $gray--medium
+			cursor: default
+			transition: color 0.3s ease-in
+
